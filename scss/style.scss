@@ -29,29 +29,25 @@ $gradient-pink-color:linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
 
 
 .container {    
-    max-width: 1920px;  
+    max-width: 1600px;  
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;     
 
     &--image {  
-        background-image: url(../images/symbol1.png), url(../images/symbol2.png)  ;
+        background-image: url(../images/SYMBOLFULL.svg) ;
         background-repeat: no-repeat, no-repeat;
-        background-position-x: left 550px, right 650px;
-        background-position-y: top, top 430px ;
-        //background-size: 90%;
-        
+        background-position: 50% 0%;
+        background-size: auto;
     }
 }       
 
 .info-header {  
-    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%); ;
-
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%) ;            
 }
 
 .header {   
    
     &__logo {   
-        padding-left: 160px;  
         margin-top: 50px;
     }
 
@@ -62,11 +58,10 @@ $gradient-pink-color:linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
 
         &-lang {    
             display: flex;
-        flex-direction: row;
+            flex-direction: row;
         }
 
         &-second {  
-            margin-right: 160px;
             margin-top: 55px;
         }
     }   
@@ -140,15 +135,18 @@ $gradient-pink-color:linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
     font-size: 38px;
     line-height: 46px;
     color: $white-color;
-    margin-left: 40px;
     padding-bottom: 423px;
 }   
 
-.scroll {   
+.scroll {  
     display: flex;  
     flex-direction: row;    
     justify-content: center;
-}   
+    padding-bottom: 30px;   
+}       
+
+
+
 
 .more { 
     display: flex;  
@@ -187,12 +185,11 @@ $gradient-pink-color:linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
 
             &--active { 
                 background-image: linear-gradient(to right, #EF8080 0%, #F0145A 100% );
-                -webkit-background-clip: text;
+                -webkit-background-clip:text;
                 -webkit-text-fill-color: transparent;   
 
                 &:hover {   
                     -webkit-text-fill-color:$accent-color;
-
                 }
             }
         }
@@ -222,11 +219,6 @@ $gradient-pink-color:linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
     }
 }   
 
-.box {  
-    max-width: 1600px;  
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .caption { 
 
@@ -266,8 +258,58 @@ $gradient-pink-color:linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
 
     }
      
+}   
 
-}
+.cards {    
+    display: flex;  
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+
+    &__image {  
+        width: 92px;
+        height: 92px;
+        margin-bottom: 30px;
+    }
+
+    &__title {  
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 27px;  
+        color: $blue-color;
+        margin-bottom: 15px;    
+
+        &--width {   
+            width: 250px;
+        }
+
+        &--next {   
+            width: 450px;
+        } 
+           
+        
+    }   
+
+    &__description {  
+        width: 494px;  
+        font-size: 16px;
+        line-height: 26px;
+        color: $white-color;
+        
+    }   
+
+    &__wrap {   
+        padding-bottom: 60px;
+
+       
+    }
+    
+    
+    
+}   
+
+
 
 
 

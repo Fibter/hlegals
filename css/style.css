@@ -77,15 +77,15 @@ body {
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
 .container--image {
-  background-image: url(../images/symbol1.png), url(../images/symbol2.png);
+  background-image: url(../images/SYMBOLFULL.svg);
   background-repeat: no-repeat, no-repeat;
-  background-position-x: left 550px, right 650px;
-  background-position-y: top, top 430px;
+  background-position: 50% 0%;
+  background-size: auto;
 }
 
 .info-header {
@@ -93,7 +93,6 @@ body {
 }
 
 .header__logo {
-  padding-left: 160px;
   margin-top: 50px;
 }
 .header__wrap {
@@ -106,7 +105,6 @@ body {
   flex-direction: row;
 }
 .header__wrap-second {
-  margin-right: 160px;
   margin-top: 55px;
 }
 .header__language {
@@ -171,7 +169,6 @@ body {
   font-size: 38px;
   line-height: 46px;
   color: #FFFFFF;
-  margin-left: 40px;
   padding-bottom: 423px;
 }
 
@@ -179,6 +176,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-bottom: 30px;
 }
 
 .more {
@@ -240,12 +238,6 @@ body {
   width: 860px;
 }
 
-.box {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .caption__title {
   font-weight: bold;
   font-size: 38px;
@@ -272,6 +264,40 @@ body {
 }
 .caption__text:hover {
   color: #F0145A;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cards__image {
+  width: 92px;
+  height: 92px;
+  margin-bottom: 30px;
+}
+.cards__title {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: #24A3FF;
+  margin-bottom: 15px;
+}
+.cards__title--width {
+  width: 250px;
+}
+.cards__title--next {
+  width: 450px;
+}
+.cards__description {
+  width: 494px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+.cards__wrap {
+  padding-bottom: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */
