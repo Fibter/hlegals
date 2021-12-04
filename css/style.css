@@ -88,8 +88,10 @@ body {
   background-size: auto;
 }
 
-.info-header {
+.info-header-block {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  border-radius: 0px 0px 12px 12px;
+  box-shadow: 0 0 0 9px #CACADB, 0 0 0 18px #E7E7F2;
 }
 
 .header__logo {
@@ -298,6 +300,95 @@ body {
 }
 .cards__wrap {
   padding-bottom: 60px;
+}
+
+.slider-margin {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.slider__wrap {
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F5FA;
+  border-radius: 12px;
+}
+.slider__image {
+  width: 400px;
+  height: 298px;
+}
+.slider__link {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #24A3FF;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin: 30px 0 5px 30px;
+  text-transform: uppercase;
+}
+.slider__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  width: 1140px;
+}
+.slider__title-active {
+  background-image: linear-gradient(to right, #F0145A 100%, #EF8080 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.slider__text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B3B3BA;
+  margin-left: 30px;
+}
+.slider__name {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #B3B3BA;
+  margin-left: 30px;
+  margin-top: 6px;
+}
+
+.swiper {
+  width: 1600px;
+  height: 430px;
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  margin-top: 30px;
+  background-color: #24A3FF;
+  opacity: 0.2;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #24A3FF;
+  opacity: 1;
+}
+
+.main__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
 }
 
 /*# sourceMappingURL=style.css.map */
