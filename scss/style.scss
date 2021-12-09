@@ -132,7 +132,13 @@ body {
         font-weight: bold;
         font-size: 16px;
         line-height: 20px;
-        color: $white-color;
+        color: $white-color;    
+
+        &-hover:hover { 
+            color: $accent-color;
+            border-bottom: 3px solid;
+            padding-bottom: 3px;
+        }
     }
 
     &__link:first-child {
@@ -304,6 +310,10 @@ body {
             width: 450px;
         }
 
+        &-hover:hover {   
+            color: $accent-color;
+            cursor: pointer;
+        }
 
     }
 

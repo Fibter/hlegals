@@ -176,6 +176,11 @@ body {
   line-height: 20px;
   color: #FFFFFF;
 }
+.nav__links-hover:hover {
+  color: #F0145A;
+  border-bottom: 3px solid;
+  padding-bottom: 3px;
+}
 .nav__link:first-child {
   padding-left: 55px;
 }
@@ -312,6 +317,10 @@ body {
 }
 .cards__title--next {
   width: 450px;
+}
+.cards__title-hover:hover {
+  color: #F0145A;
+  cursor: pointer;
 }
 .cards__description {
   width: 494px;
