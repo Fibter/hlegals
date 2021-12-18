@@ -8,6 +8,8 @@
 
 @import "_variable.scss";
 
+@import "_responsive.scss";
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -77,6 +79,7 @@ body {
     }
 
     &__language {
+        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -88,9 +91,11 @@ body {
     }
 
     &__language:hover {
+        display: block;
         background-color: $accent-color;
         border-radius: 8px;
         padding: 5px 7px;
+        
 
     }
 
@@ -106,12 +111,12 @@ body {
     }
 
     &__info.facebook {
-
         width: 24px;
         height: 24px;
     }
 
     &__info.phone {
+        display: list-item;
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
@@ -443,26 +448,42 @@ body {
 
 
 
-.box {
+.box {  
     width: 1720px;
+    width: 100%;
+    max-height: 100%;
     margin-left: auto;
     margin-right: auto;
-}
+}   
 
 
-.gallery {
+.gallery {  
     &__wrap {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-bottom: 60px;
+       flex-wrap: wrap;
+    }   
+
+    &__box {   
+        width: auto;
+        height: 120px;
+        flex-grow: 1;
+
+       
+        
+
     }
 
     &__img {
-        display: flex;
-        flex-wrap: wrap;
-        width: 430px;
-        height: 120px;
+        width: 100%;    
+        max-height: 100%;   
+        min-width: 100%;    
+        object-fit: cover;
+        vertical-align: bottom;  
+
+        
+    
+        
+        
 
         &-hillel {
             border-top-left-radius: 12px;

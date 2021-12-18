@@ -72,111 +72,6 @@ table {
   border-spacing: 0;
 }
 
-@media (max-width: 1800px) {
-  .container {
-    max-width: auto;
-    padding: 0 30px;
-  }
-
-  .more__description {
-    max-width: 581px;
-  }
-
-  .cards__description {
-    max-width: 400px;
-  }
-
-  .cards__title--next {
-    max-width: 400px;
-  }
-
-  .cards__title {
-    width: 350px;
-  }
-
-  .swiper {
-    max-width: 1400px;
-  }
-
-  .slider__title {
-    max-width: 840px;
-  }
-
-  .slider__image {
-    width: 100%;
-    height: auto;
-  }
-
-  .gallery__img {
-    width: 360px;
-    height: 120px;
-  }
-
-  .gallery__wrap {
-    flex-wrap: nowrap;
-  }
-
-  .news__image {
-    max-width: 420px;
-    max-height: 200px;
-  }
-
-  .wrap-news {
-    max-width: 420px;
-  }
-
-  .gallery__img-hillel {
-    border-top-left-radius: none;
-  }
-
-  .gallery__box {
-    max-height: 100px;
-  }
-}
-@media (max-width: 1440px) {
-  .more__description {
-    max-width: 405px;
-  }
-
-  .cards__description {
-    max-width: 261px;
-  }
-
-  .cards__title {
-    max-width: 250px;
-  }
-
-  .slider__image {
-    display: none;
-  }
-
-  .slider::before {
-    content: url(../images/image-new.svg);
-  }
-
-  .slider__title {
-    max-width: 444px;
-  }
-
-  .swiper {
-    max-width: 904px;
-    height: 100% !important;
-  }
-
-  .gallery__box {
-    max-width: 256px;
-  }
-
-  .news__image {
-    display: inline-block;
-    max-width: 281px;
-    max-height: 200px;
-  }
-
-  .wrap-news {
-    max-width: 281px;
-  }
-}
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -231,7 +126,6 @@ body {
   padding-bottom: 66px;
 }
 .header__language {
-  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -242,7 +136,6 @@ body {
   margin-right: 14px;
 }
 .header__language:hover {
-  display: block;
   background-color: #F0145A;
   border-radius: 8px;
   padding: 5px 7px;
@@ -531,27 +424,21 @@ body {
 
 .box {
   width: 1720px;
-  width: 100%;
-  max-height: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .gallery__wrap {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-}
-.gallery__box {
-  width: auto;
-  height: 120px;
-  flex-grow: 1;
+  margin-bottom: 60px;
 }
 .gallery__img {
-  width: 100%;
-  max-height: 100%;
-  min-width: 100%;
-  object-fit: cover;
-  vertical-align: bottom;
+  display: flex;
+  flex-wrap: wrap;
+  width: 430px;
+  height: 120px;
 }
 .gallery__img-hillel {
   border-top-left-radius: 12px;
@@ -728,4 +615,4 @@ body {
   padding-bottom: 30px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=css.map */
